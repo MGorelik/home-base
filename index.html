@@ -2,7 +2,9 @@
 <!doctype html>
 <html ng-app="mg">
     <head>
+
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script src="js/app.js"></script>
 
         <title>Michael Gorelik | Software Engineer</title>
 <!--
@@ -23,10 +25,17 @@ TODO: Improvise. Adapt. Overcome.
         <meta name="description" content="Software engineer, Deadpool, gamer, decent dude">
         <meta name="author" content="Michael Gorelik">
 
-        <link href="css/gradients.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="under-construction">
-      <img src="img/under_construction.png">
+    <!--<body class="under-construction">-->
+      <!--<img src="img/under_construction.png">-->
+    <!--</body>-->
+    <body>
+        <base-content>
+            <about></about>
+            <cv></cv>
+            <contact></contact>
+        </base-content>
     </body>
+
 </html>
