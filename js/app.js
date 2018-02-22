@@ -12,13 +12,13 @@ function createTransclude(name, templatePath) {
     });
 }
 
-createTransclude('base-content', 'templates/base_content')
+createTransclude('base-content', 'templates/base_content');
 createTransclude('about', 'templates/about');
 createTransclude('cv', 'templates/cv');
 createTransclude('contact', 'templates/contact');
 
 function getLevel(levelStr) {
-    return 9001
+    return moment().diff(moment(levelStr, 'YYYY/MM/DD'), 'years');
 }
 
 app.filter('level', function() {
